@@ -1,0 +1,28 @@
+services:
+  db:
+    image: gvenzl/oracle-xe:21-slim   # Oracle XE 21c
+    environment:
+      ORACLE_PASSWORD: oracle
+      APP_USER: ferramentas
+      APP_USER_PASSWORD: ferramentas
+    ports:
+      - "1521:1521"
+    healthcheck:
+      test: ["CMD", "bash", "-c", "echo 'select 1 from dual;' | sqlplus -s system/oracle@//localhost:1521/XEPDB1"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@//db:1521/XEPDB1
+      SPRING_DATASOURCE_USERNAME: ferramentas
+      SPRING_DATASOURCE_PASSWORD: ferramentas
+      SPRING_JPA_HIBERNATE_DDL_AUTO: none
+      SPRING_SQL_INIT_MODE: never
+    ports:
+      - "8081:8081"
