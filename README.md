@@ -163,11 +163,18 @@ ENTRYPOINT ["sh","-c","java -jar /app/app.jar --server.port=${PORT}"]
 
 ---
 
-## Créditos
-- **Autores:** Lu Vieira Santos, Diego Furigo, Melissa Pereira
-- **Projeto:** CP Spring Boot — API de Ferramentas (Oracle + HATEOAS)
+## IDE utilizada:
+
+IntelliJ
+ 
+---
+
+## Print do SpringInitialzr
+
+<img width="1142" height="453" alt="imagem" src="https://github.com/user-attachments/assets/44145751-2434-48ee-9308-d54ea6cdb74c" />
 
 ---
 
-## Capturas (opcional)
-Inclua prints em `docs/img/` (Initializr, Postman etc.) e referencie-os aqui.
+## Créditos
+- **Autores:** Lu Vieira Santos, Diego Furigo, Melissa Pereira
+- **Projeto:** CP Spring Boot — API de Ferramentas (Oracle + HATEOAS)
