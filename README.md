@@ -169,9 +169,15 @@ IntelliJ
  
 ---
 
-## Print do SpringInitialzr
+## Prints
 
 <img width="1142" height="453" alt="imagem" src="https://github.com/user-attachments/assets/44145751-2434-48ee-9308-d54ea6cdb74c" />
+
+<img width="1364" height="275" alt="image" src="https://github.com/user-attachments/assets/82153d4e-8d34-4b06-97fd-113e304ddeb6" />
+
+<img width="941" height="605" alt="image" src="https://github.com/user-attachments/assets/094a9c35-b006-4e95-8730-3629ec50c773" />
+
+
 
 ---
 
